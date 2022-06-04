@@ -1,0 +1,160 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-transform: none;
+	text-decoration: none;
+}
+body {
+	padding: 0 4%;
+}
+header {
+	width: 100%;
+	height: 100px;
+	margin: 20px 0;
+	background: #16361b;
+	border-radius: 15px 15px 0 0;
+	transform: translateY(-150%);
+  	animation: showTop 1s forwards;
+}
+.box {
+	display: flex;
+	align-items: stretch;
+	width: 100%;
+	height: auto;
+}
+.card_left {
+	background: #4c6942;
+	border-radius: 0 0 0 15px;
+	width: 100%;
+	height: 100%;
+}
+.container {
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 20%;
+	height: 436px;
+	margin-left: 20px;
+}
+.card_right {
+	background: #4c6942;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.card_border-radius {
+	border-radius: 0 0 15px 0;
+}
+.card_left{
+	animation: showLeft 1s;
+	z-index: 1;
+	position: relative;
+}
+.card_right-1 {
+	animation: showRight .6s;
+}
+.card_right-2 {
+	animation: showRight .7s;
+}
+.card_right-3 {
+	animation: showRight .8s;
+}
+.card_right-4 {
+	animation: showRight .9s;
+}
+.card_right-5 {
+	animation: showRight 1s;
+}
+.card_right-6 {
+	animation: showRight 1.1s;
+}
+.card_right-7 {
+	animation: showRight 1.2s;
+}
+.card_right-8 {
+	animation: showRight 1.3s;
+}
+.card_right-9 {
+	animation: showRight 1.4s;
+}
+.card_right-10 {
+	animation: showRight 1.5s;
+}
+.card_right-11 {
+	animation: showRight 1.6s;
+}
+.card_right-12 {
+	animation: showRight 1.7s;
+}
+.card_right-13 {
+	animation: showRight 1.8s;
+}
+.card_right-14 {
+	animation: showRight 1.9s;
+}
+.card_right-15 {
+	animation: showRight 2s;
+}
+.card_right-16 {
+	animation: showRight 2.1s;
+}
+.card_right-17 {
+	animation: showRight 2.2s;
+}
+.card_right-18 {
+	animation: showRight 2.3s;
+}
+.card_right-19 {
+	animation: showRight 2.4s;
+}
+main {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	border-radius: 15px;
+	opacity: 0;
+  	animation: showMaim 2.5s forwards;
+  	animation-delay: 1s;
+  	margin-top: 80px;
+  	border: 1px solid black;
+}
+.box-img {
+	max-width: 100%;
+    position: relative;
+    height: 1300px;
+    margin: auto;
+    border-radius: 15px;
+}
+.img {
+	object-fit: cover;
+    width: 100%;
+    height: 1300px;
+    border-radius: 15px;
+}
+
+
+
+@keyframes showLeft {
+	from {left:-200%;}
+	to {left:0;}
+}
+@keyframes showRight {
+	from {right:-200%;}
+	to {right:0;}
+}
+@keyframes showTop {
+  	100% {transform: translateX(0);}
+  	0% {transform: translateY(-150%);}
+}
+@keyframes showMaim {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
