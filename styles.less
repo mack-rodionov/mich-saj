@@ -19,6 +19,7 @@ header {
 }
 .box {
 	display: flex;
+	justify-content: space-between;
 	align-items: stretch;
 	width: 100%;
 	height: auto;
@@ -34,21 +35,27 @@ header {
 	align-items: stretch;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 20%;
+	width: auto;
 	height: 436px;
 	margin-left: 20px;
 }
 .card_right {
 	background: #4c6942;
-	width: auto;
+	width: 200px;
 	max-width: 100%;
 	height: auto;
 	z-index: 1;
 	position: relative;
 	text-align: center;
-	color: #fff;
+	color: #eee;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+	transition: .2s;
+}
+.card_right:hover {
+	background: #B4E398;
+	color: #16361b;
+	font-weight: bold;
 }
 .card_border-radius {
 	border-radius: 0 0 15px 0;
@@ -145,16 +152,22 @@ main {
 @keyframes showLeft {
 	from {left:-200%;}
 	to {left:0;}
+	0% {opacity: 0;}
+  	100% {opacity: 1;}
 }
 @keyframes showRight {
 	from {right:-200%;}
 	to {right:0;}
+	0% {opacity: 0;}
+  	100% {opacity: 1;}
 }
 @keyframes showTop {
   	100% {transform: translateX(0);}
   	0% {transform: translateY(-150%);}
+  	0% {opacity: 0;}
+  	100% {opacity: 1;}
 }
 @keyframes showMaim {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  	0% {opacity: 0;}
+  	100% {opacity: 1;}
 }
