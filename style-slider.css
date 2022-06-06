@@ -2,7 +2,6 @@
 .slider{
     max-width: 100%;
     position: relative;
-    
     height: 400px;
     margin-bottom: 130px;
     margin: auto;
@@ -77,25 +76,25 @@
 
 .slider .item {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 0.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 0.5s;
 }
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .4;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .4;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
