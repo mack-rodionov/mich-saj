@@ -3,7 +3,7 @@
         var timer = null;
         showSlides(slideIndex);
  
-        afterTime(7000); // Устанавливаем считчик...
+        afterTime(5000); // Устанавливаем считчик...
         /* Функция увеличивает индекс на 1, показывает следующй слайд*/
         function plusSlide() {
             showSlides(slideIndex += 1);
@@ -50,7 +50,7 @@
             dots[slideIndex-1].classList.add("active");
             // dots[slideIndex - 1].className += " active";
  
-            afterTime(7000); // Сбрасываем и устанавливаем счетчик...
+            afterTime(5000); // Сбрасываем и устанавливаем счетчик...
         }
  
         function afterTime(delay) { // Сам счетчик..
