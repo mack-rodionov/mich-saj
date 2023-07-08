@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+.wrapper{
+  width: 100%; 
+  background: rgb(76,105,66);
+  background: linear-gradient(90deg, rgba(76,105,66,1) 0%, rgba(22,54,27,1) 50%, rgba(76,105,66,1) 100%);
+  margin-top: 50px;
+  border-radius: 5px;
+}
+.wrapper_double{
+  background-color: #3c5832;
+  width: 100%; 
+}
+.form_text {
+  margin-bottom: 20px;
+  color: #e1fbcb;
+}
+
+#newsletter{
+  padding: 20px 0;
+  text-align:center;
+}
+
+h2 {
+  font-size: 30px;
+ }
+
+input, .button_form{
+  display:inline-block;
+  outline:none;
+  padding: 9px 18px;
+  margin-right:10px;
+  border: none;
+  }
+  
+input{
+  width: 30%;
+  background-color: #e1fbcb;
+}
+
+input[placeholder] {
+  color: #16361b;
+  }
+
+input[type="text"]::-webkit-input-placeholder {
+    color: #16361b;
+ } 
+   input[type="text"]::-moz-placeholder {
+    color: #16361b;
+}
+
+.button_form {
+    padding: 9px 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #16361b;
+    background-color: #e1fbcb;
+} 
+
+/* Smartphone + Tablet
+---------------------------------- */
+@media screen and (min-width:240px) and (max-width:615px) {
+  
+  input, .button_form{
+  display: block;
+  margin: 10px auto;
+}
+  
+  input{min-width:220px;}
+  
+}
+@media screen and (max-width: 750px) {
+    .wrapper{
+      border-radius: 0;
+  }
+    .wrapper_double{
+      border-radius: 0;
+  }
+}
